@@ -12,13 +12,17 @@ version = "0.7.1"
 [dependencies]
 httparse = "1.0"
 log = "0.3.1"
-mio = "0.6"
+#mio = "0.6"
 rand = "0.3.10"
 sha1 = "0.2"
 url = "1.0"
 slab = "0.3"
 bytes = "0.4"
 byteorder = "1.0"
+
+[dependencies.mio]
+git = "https://github.com/sapsan4eg/mio"
+version = "0.6.6"
 
 [dev-dependencies]
 clap = "2.0"
@@ -42,3 +46,15 @@ version = "0.9"
 default = []
 permessage-deflate = ["libz-sys", "libc"]
 ssl = ["openssl"]
+
+[dependencies.dialog]
+git = "https://github.com/sapsan4eg/dialog.git"
+version = "0.1.0"
+
+[dependencies.dialog-stream]
+git = "https://github.com/sapsan4eg/dialog.git"
+version = "0.1.0"
+
+[dependencies.dialog-formatter-json]
+git = "https://github.com/sapsan4eg/dialog.git"
+version = "0.1.0"
